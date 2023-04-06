@@ -1,0 +1,96 @@
+.stepper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.step .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #444;
+  margin-right: 0.5rem;
+}
+
+.step .label {
+  font-size: 1rem;
+}
+
+.step.active .icon {
+  background-color: #62CDFF;
+  color: #fff;
+}
+
+.step.active .label {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2rem;
+
+}
+
+.buttons button {
+  background-color: #62CDFF;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+}
+
+.line-container {
+  position: relative;
+  top: -78px;
+  height: 0.2rem;
+  background-color: #ddd;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #62CDFF;
+  transition: width 0.3s ease-in-out;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  margin: 20px 450px;
+  padding: 40px;
+  box-shadow: 10px 10px 10px;
+}
+
+form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  width: 500px;
+}
